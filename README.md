@@ -28,21 +28,13 @@ Our target is to reduce the mean absolute error (MAE) and root mean squared erro
 *Graph Image – Technical Indicators:*  
 ![Image](https://github.com/user-attachments/assets/ca67c81d-7ca2-4a2a-b381-72e38defda34)
 ![Image](https://github.com/user-attachments/assets/e74e387d-b623-4417-b465-8c95e1eaa6e2)
-![Image](https://github.com/user-attachments/assets/c787515a-2c70-48b1-a617-2226dedde2bc)
-![Image](https://github.com/user-attachments/assets/818579de-9578-4b79-89ab-e19a752b9305)
-![Image](https://github.com/user-attachments/assets/86a0a019-7a9b-4b29-900c-07a869be7604)
 
-![Image](https://github.com/user-attachments/assets/7b67aed5-36d3-48dd-8cd8-0be81382f913)
 _This graph shows the Close price along with MA10, MA20, MA50, RSI, and Volatility over time._
 
 ### Model Architecture
 - **Transformer-Based Model with Residual Connection:**  
   We project the input features into a higher-dimensional space and feed them into several Transformer encoder layers. A residual connection is added (by summing the encoder’s final output with the projected input’s last timestep) to help preserve the original variance of the signal. This architecture allows the model to capture long-range dependencies and complex patterns in the data.
   
-*Graph Image – Model Architecture Diagram:*  
-![Model Architecture Diagram](https://your-image-link.com/model_architecture.png)  
-_This diagram illustrates the Transformer model workflow, including input projection, Transformer encoding, residual connection, and final prediction._
-
 ### Training Process
 - **Loss Function & Optimizer:**  
   The model is trained using Mean Squared Error (MSE) loss with the Adam optimizer.
@@ -50,7 +42,8 @@ _This diagram illustrates the Transformer model workflow, including input projec
   The training loop runs for a fixed number of epochs (e.g., 50), and the training loss is monitored.
   
 *Graph Image – Training Loss Curve:*  
-![Training Loss Graph](https://your-image-link.com/training_loss.png)  
+![Image](https://github.com/user-attachments/assets/c787515a-2c70-48b1-a617-2226dedde2bc)
+
 _This plot shows the reduction in training loss over epochs, indicating the model’s learning progress._
 
 ---
@@ -63,11 +56,13 @@ After training, the model is evaluated on both the training and test datasets. W
 - **Test RMSE:** ~363 points
 
 *Graph Image – Actual vs. Predicted Prices:*  
-![Actual vs. Predicted Graph](https://your-image-link.com/actual_vs_predicted.png)  
+![Image](https://github.com/user-attachments/assets/818579de-9578-4b79-89ab-e19a752b9305)
+
+![Image](https://github.com/user-attachments/assets/7b67aed5-36d3-48dd-8cd8-0be81382f913) 
 _This graph shows the actual Bank Nifty closing prices (blue) and the model’s predictions (red) over time, with a clear indication of the train/test split._
 
 *Graph Image – Error Distribution:*  
-![Error Distribution Graph](https://your-image-link.com/error_distribution.png)  
+![Image](https://github.com/user-attachments/assets/86a0a019-7a9b-4b29-900c-07a869be7604)
 _This histogram displays the distribution of prediction errors (actual - predicted) for the test set._
 
 ---
