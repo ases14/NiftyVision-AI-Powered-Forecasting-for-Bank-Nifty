@@ -18,12 +18,26 @@ Our target is to reduce the mean absolute error (MAE) and root mean squared erro
 ## 2. Our Approach
 
 ### Data Acquisition & Feature Engineering
-- **Data Source:** We use Yahoo Finance (via the `yfinance` library) to download daily historical data for Bank Nifty.
-- **Technical Indicators:**  
-  - **Moving Averages (MA10, MA20, MA50):** These smooth out price fluctuations and highlight trends.  
-  - **RSI (Relative Strength Index):** Measures momentum and identifies overbought/oversold conditions.  
-  - **Volatility:** Calculated as the 10-day rolling standard deviation to capture market variability.  
-  - **Log Returns:** Helps to capture relative changes in price.
+- **Data Source:**  
+  We use Yahoo Finance via the `yfinance` library to download historical data for Bank Nifty.  
+  Our project utilizes both daily data and intraday (hourly) data if available. For this project, we use daily data; however, the system is flexible enough to work with hourly intervals by modifying the download parameters.
+
+- **Dataset Details:**  
+  The dataset includes key OHLCV values (Open, High, Low, Close, Volume) and is enriched with technical indicators:
+  - **Moving Averages (MA10, MA20, MA50):** Smooths price data and highlights trends.
+  - **RSI (Relative Strength Index):** Measures momentum to identify overbought/oversold conditions.
+  - **Volatility:** 10-day rolling standard deviation of the Close price.
+  - **Log Returns:** Captures relative price changes, aiding in normalization and stationarity.
+  
+  **Hourly Chart Information:**  
+  If you choose to work with intraday data, you can set the interval to `"60m"` (hourly data) in yfinance. An example hourly chart of Bank Nifty would display price movements, volume, and technical indicators on an hourly scale.
+  
+  *Sample Dataset Image:*  
+  ![Image](https://github.com/user-attachments/assets/faa50780-2c06-4787-a284-57d898a9b3e0)![Image](https://github.com/user-attachments/assets/fc76552f-5078-481a-854e-58992ad08531)
+  _This image provides a snapshot of the dataset, showcasing the OHLCV data along with computed technical indicators on an hourly chart._
+
+- **Visualization:**  
+  We generate plots to inspect the computed technical indicators against the raw closing prices.
   
 *Graph Image – Technical Indicators:*  
 ![Image](https://github.com/user-attachments/assets/ca67c81d-7ca2-4a2a-b381-72e38defda34)
