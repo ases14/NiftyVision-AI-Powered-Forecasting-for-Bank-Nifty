@@ -87,7 +87,3 @@ Our approach not only meets the current forecasting needs but also sets the stag
 
 ---
 
-## Repository Setup & Usage
-
-### Repository Structure
-
