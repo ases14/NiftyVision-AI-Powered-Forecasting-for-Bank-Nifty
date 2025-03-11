@@ -26,7 +26,13 @@ Our target is to reduce the mean absolute error (MAE) and root mean squared erro
   - **Log Returns:** Helps to capture relative changes in price.
   
 *Graph Image – Technical Indicators:*  
-![Image](https://github.com/user-attachments/assets/ca67c81d-7ca2-4a2a-b381-72e38defda34) 
+![Image](https://github.com/user-attachments/assets/ca67c81d-7ca2-4a2a-b381-72e38defda34)
+![Image](https://github.com/user-attachments/assets/e74e387d-b623-4417-b465-8c95e1eaa6e2)
+![Image](https://github.com/user-attachments/assets/c787515a-2c70-48b1-a617-2226dedde2bc)
+![Image](https://github.com/user-attachments/assets/818579de-9578-4b79-89ab-e19a752b9305)
+![Image](https://github.com/user-attachments/assets/86a0a019-7a9b-4b29-900c-07a869be7604)
+
+![Image](https://github.com/user-attachments/assets/7b67aed5-36d3-48dd-8cd8-0be81382f913)
 _This graph shows the Close price along with MA10, MA20, MA50, RSI, and Volatility over time._
 
 ### Model Architecture
