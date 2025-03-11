@@ -35,7 +35,8 @@ Our target is to reduce the mean absolute error (MAE) and root mean squared erro
   *Sample Dataset Image:*  
   ![Image](https://github.com/user-attachments/assets/faa50780-2c06-4787-a284-57d898a9b3e0)
   ![Image](https://github.com/user-attachments/assets/fc76552f-5078-481a-854e-58992ad08531)
-  _This image provides a snapshot of the dataset, showcasing the OHLCV data along with computed technical indicators on an hourly chart._
+
+   _This image provides a snapshot of the dataset, showcasing the OHLCV data along with computed technical indicators on an hourly chart._
 
 - **Visualization:**  
   We generate plots to inspect the computed technical indicators against the raw closing prices.
