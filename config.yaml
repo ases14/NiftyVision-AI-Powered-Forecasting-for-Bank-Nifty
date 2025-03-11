@@ -1,0 +1,7 @@
+ticker: "^NSEBANK"
+start_date: "2020-01-01"
+end_date: "2023-01-01"
+window_size: 10
+test_size: 0.2
+num_epochs: 50
+learning_rate: 0.001
