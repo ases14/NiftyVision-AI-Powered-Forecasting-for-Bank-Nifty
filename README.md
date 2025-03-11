@@ -33,7 +33,8 @@ Our target is to reduce the mean absolute error (MAE) and root mean squared erro
   If you choose to work with intraday data, you can set the interval to `"60m"` (hourly data) in yfinance. An example hourly chart of Bank Nifty would display price movements, volume, and technical indicators on an hourly scale.
   
   *Sample Dataset Image:*  
-  ![Image](https://github.com/user-attachments/assets/faa50780-2c06-4787-a284-57d898a9b3e0)![Image](https://github.com/user-attachments/assets/fc76552f-5078-481a-854e-58992ad08531)
+  ![Image](https://github.com/user-attachments/assets/faa50780-2c06-4787-a284-57d898a9b3e0)
+  ![Image](https://github.com/user-attachments/assets/fc76552f-5078-481a-854e-58992ad08531)
   _This image provides a snapshot of the dataset, showcasing the OHLCV data along with computed technical indicators on an hourly chart._
 
 - **Visualization:**  
